@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad5</title>
+</head>
+<body>
+<h1>PC1</h1>
+	<ul>
+		<p id="a1"></p>
+	<p id="a2"></p>
+	<p id="a3"></p>
+	</ul>
+<h1>PC2</h1>
+	<ul>
+		<p id="b1"></p>
+		<p id="b2"></p>
+		<p id="b3"></p>
+	</ul>
+<h1>PC3</h1>
+	<ul>
+		<p id="c1"></p>
+		<p id="c2"></p>
+		<p id="c3"></p>
+	</ul>
+
+	<script type="text/javascript">
+		var pc1={
+			codigo: "0001",
+			ram: "2GB",
+			discoDuro: "500GB"
+		}
+		var pc2 = new Object()
+			pc2.codigo = "0002";
+			pc2.ram = "4GB";
+			pc2.discoDuro = "750GB";
+		function pc3(codigo, ram, discoDuro){
+			this.codigo = codigo;
+			this.ram = ram;
+			this.discoDuro = discoDuro;
+		}
+		var compu = new pc3("0003", "8GB", "1TB");
+
+		document.getElementById("a1").innerHTML = pc1.codigo;
+		document.getElementById("b1").innerHTML = pc2.codigo;
+		document.getElementById("c1").innerHTML = compu.codigo;
+		
+		document.getElementById("a2").innerHTML = pc1.ram;
+		document.getElementById("b2").innerHTML = pc2.ram;
+		document.getElementById("c2").innerHTML = compu.ram;
+
+		document.getElementById("a3").innerHTML = pc1.discoDuro;
+		document.getElementById("b3").innerHTML = pc2.discoDuro;
+		document.getElementById("c3").innerHTML = compu.discoDuro;
+	
+	</script>
+</body>
+</html>

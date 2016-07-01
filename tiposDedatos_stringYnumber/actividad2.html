@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad2</title>
+</head>
+<body>
+	<p  id="res"></p>
+</body>
+	<script type="text/javascript">
+	//Numer.prototupe = Representa el prototipo para esta clase. Puede utilizar el prototipo para añadir propiedades o métodos a todas las instancias de una clase. Para información acerca de prototipos.
+	Number.prototype.metodoSuma = function(){
+			return this+10;
+		}
+		 var numero = 10;
+		 document.getElementById("res").innerHTML = numero.metodoSuma();
+	</script>
+</html>

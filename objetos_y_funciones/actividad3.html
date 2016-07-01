@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Activate3</title>
+</head>
+<body>
+<h1>Persona1</h1>
+	<p id="a1"></p>
+	<p id="a2"></p>
+	<p id="a3"></p>
+<h1>Persona2</h1>
+	<p id="b1"></p>
+	<p id="b2"></p>
+	<p id="b3"></p>
+<h1>Persona3</h1>
+	<p id="c1"></p>
+	<p id="c2"></p>
+	<p id="c3"></p>
+<script type="text/javascript">
+	var persona1={
+		codigo:"0001",
+		nombre :"Camilo",
+		edad:20
+	}
+	var persona2 = new Object();
+		persona2.id = "0002";
+		persona2.nombre = "Fabian";
+		persona2.edad = 22;
+	function persona3(id, nombre, edad){
+		this.id = id;
+		this.nombre = nombre;
+		this.edad = edad;
+	}
+	var humanos = new persona3("0003", "Cony", 28);
+	//Mostrar datos en navegador con getDocumentByID
+	document.getElementById("a1").innerHTML = persona1.codigo;
+	document.getElementById("a2").innerHTML = persona1.nombre;
+	document.getElementById("a3").innerHTML = persona1.edad;
+
+	document.getElementById("b1").innerHTML = persona2.id;
+	document.getElementById("b2").innerHTML = persona2.nombre;
+	document.getElementById("b3").innerHTML = persona2.edad;
+
+	document.getElementById("c1").innerHTML = humanos.id;
+	document.getElementById("c2").innerHTML = humanos.nombre;
+	document.getElementById("c3").innerHTML = humanos.edad;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad4</title>
+</head>
+<body>
+<p id="respuesta"></p>
+
+<script type="text/javascript">
+	Number.prototype.metodoMultiplicacion = function(){
+		return this *12;
+	}
+	var valor = 12;
+	document.getElementById("respuesta").innerHTML = valor.metodoMultiplicacion();
+</script>
+</body>
+</html>

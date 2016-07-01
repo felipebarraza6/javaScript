@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad4</title>
+</head>
+<body>
+<h1>Vehiculo1</h1>
+	<p id="a1"></p>
+	<p id="a2"></p>
+	<p id="a3"></p>
+<h1>Vehiculo2</h1>
+	<p id="b1"></p>
+	<p id="b2"></p>
+	<p id="b3"></p>
+<h1>Vehiculo3</h1>
+	<p id="c1"></p>
+	<p id="c2"></p>
+	<p id="c3"></p>
+<script type="text/javascript">
+	var vehiculo1 = {
+		placa: "NP-5566",
+		marca: "Ford",
+		modelo: 9933
+	}
+	var vehiculo2 = new Object();
+		vehiculo2.placa =  "OP-9933";
+		vehiculo2.marca = "Nissan";
+		vehiculo2.modelo = 7711;
+
+	function vehiculo3(placa, marca, modelo){
+		this.placa = placa;
+		this.marca = marca;
+		this.modelo = modelo;
+	}
+	var auto = new vehiculo3("QW-4455", "Ferrari", "Super");
+
+	document.getElementById("a1").innerHTML = vehiculo1.placa;
+	document.getElementById("a2").innerHTML = vehiculo1.marca;
+	document.getElementById("a3").innerHTML = vehiculo1.modelo;
+
+	document.getElementById("b1").innerHTML = vehiculo2.placa;
+	document.getElementById("b2").innerHTML = vehiculo2.marca;
+	document.getElementById("b3").innerHTML = vehiculo2.modelo;
+
+	document.getElementById("c1").innerHTML = auto.placa;
+	document.getElementById("c2").innerHTML = auto.marca;
+	document.getElementById("c3").innerHTML = auto.modelo;
+
+</script>
+</body>
+</html>

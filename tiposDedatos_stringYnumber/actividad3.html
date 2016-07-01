@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad3</title>
+</head>
+<body>
+<p id="resltado"></p>
+<script type="text/javascript">
+	Number.prototype.metodoResta = function(){
+		return this-20;
+	}
+	var numero = 100;
+	document.getElementById("resltado").innerHTML = numero.metodoResta(); 
+</script>
+</body>
+</html>

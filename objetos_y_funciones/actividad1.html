@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad1</title>
+</head>
+<body>
+	<h1>Articulo1</h1>
+		<p id="a1"></p>
+		<p id="b1"></p>
+		<p id="c1"></p>
+	<h1>Articulo2</h1>
+		<p id="a2"></p>
+		<p id="b2"></p>
+		<p id="c2"></p>
+	<h1>Articulo3</h1>
+		<p id="a3"></p>
+		<p id="b3"></p>
+		<p id="c3"></p>
+	<script type="text/javascript">
+		//crear objeto primera forma
+		var articulo1= {
+			codigo: "001",
+			nombre: "JS",
+			precio: 25
+		}
+		//crear objeto segunda forma
+		var articulo2= new Object();
+			articulo2.codigo = "002";
+			articulo2.nombre = "PYTHON";
+			articulo2.precio = 100; 
+		//crear objeto tercera forma
+		function articulo3(codigo, nombre, precio){
+			this.codigo = codigo;
+			this.nombre = nombre;
+			this.precio = precio;
+		}
+		var articulo3 = new articulo3("003", "PHP", 50);
+		//imprimir datos primer metodo
+		document.getElementById("a1").innerHTML = articulo1.codigo;
+		document.getElementById("b1").innerHTML = articulo1.nombre;
+		document.getElementById("c1").innerHTML = articulo1.precio; 
+		//imprimir datos segundo metodo
+		document.getElementById("a2").innerHTML = articulo2.codigo;
+		document.getElementById("b2").innerHTML = articulo2.nombre;
+		document.getElementById("c2").innerHTML = articulo2.precio;
+		//imprimir datos tercer metodo
+		document.getElementById("a3").innerHTML = articulo3.codigo;
+		document.getElementById("b3").innerHTML = articulo3.nombre;
+		document.getElementById("c3").innerHTML = articulo3.precio;
+	</script>
+</body>
+</html>
