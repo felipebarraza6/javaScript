@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad4</title>
+</head>
+<body>
+ <p id="p1"></p>
+<script type="text/javascript">
+ //creamos una cadena vacia para luego concatenarle datos
+ var text="";
+ //establecimos nuestro contador en 1 para itinirencias
+ var contador = 1;
+ //creamos un arreglo con equipos de futbol
+ var equipos = new Array("Milan" ,"Liverpool", "Barcelona", "Chelsea", "Bayern");
+//hacemos nuestro DO que es el que realiza la accion de concatenar y sumar al contador
+ do{
+ 	text+=equipos[contador]+" <br>";
+ 	contador++;
+//Nuestro while va a validar y insertar en nuestro HTML contador=1 debe ser menor o igual equipos.length
+//length porte de nuestro arreglo en este caso length=5(Milan,liverpool,barcelona,chelsea,bayern)
+ }while(contador<=equipos.length){
+ 	document.getElementById("p1").innerHTML = text;
+ }
+
+</script>
+</body>
+</html>

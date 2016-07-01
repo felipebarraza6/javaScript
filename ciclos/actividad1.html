@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad1</title>
+</head>
+<body>
+<p id="p1"></p>
+	<script type="text/javascript">
+	var text = "";
+
+	function ciclo(){
+			var i = 0;
+			var tag = 100;
+		
+			for(i=1;i<tag;i++){
+				if(i % 2==0){
+				text+=i+"<br>";
+			}
+		}
+	}
+	ciclo();
+	document.getElementById("p1").innerHTML = text;
+
+
+	</script>
+
+
+</body>
+</html>

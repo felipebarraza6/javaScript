@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad2</title>
+</head>
+<body>
+<p id="1"></p>
+
+<script type="text/javascript">
+//creamos un objeto 
+function datos(codigo, nombre, telefono){
+	this.codigo = codigo;
+	this.nombre = nombre;
+	this.telefono = telefono;
+}
+//agregamos datos al objeto
+var fold = new datos("0001", "Felipe", 951250949);
+//creamos una cadena vacia
+var text= "";
+//cliclo
+for(x in fold){
+	//concatemos nuestra x a la cadena vacia
+	text+=fold[x]+" <br>";
+	document.getElementById("1").innerHTML = text;
+}
+</script>
+</body>
+</html>
