@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad5</title>
+</head>
+	<body>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+		<script type="text/javascript">
+			var frutas = new Array("Mango", "Kiwi", "Toronja");
+			var colores = new Array("Negro","Violeta","Verde");
+			var animales = new Array("Leopardo", "Vaca", "Cerdo");
+			var equipos = new Array("River Plate", "America De Cali", "Gremio");
+			var planetas = new Array("Jupiter", "Urano", "Saturno");
+			var flores = new Array("Hortensia", "Margarita", "Azucena");
+
+			document.getElementById("p1").innerHTML = frutas.concat(colores);
+			document.getElementById("p2").innerHTML = animales.concat(equipos);
+			document.getElementById("p3").innerHTML = planetas.concat(flores);
+		</script>
+</body>
+</html>

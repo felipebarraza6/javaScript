@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad4</title>
+	
+</head>
+<body>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	<script type="text/javascript">
+		var decimal = [1.74 ,1.53, 1.43];
+		var numeros = [24, 50, 19];
+		var ps = ["PES 2014", "FIFA 2014", "Gears of War"];
+		var organos = ["Higado", "Pulmones", "Cerebro"];
+		var social = ["Facebook", "Twiter", "Instagram"];
+		var planetas = ["Venus", "Mercurio", "Pluton"];
+
+		document.getElementById("p1").innerHTML = decimal.sort();
+		document.getElementById("p2").innerHTML = numeros.sort();
+		document.getElementById("p3").innerHTML = ps.sort();
+		document.getElementById("p4").innerHTML = organos.sort();
+		document.getElementById("p5").innerHTML = social.sort();
+		document.getElementById("p6").innerHTML = planetas.sort();
+	</script>
+</body>
+</html>
